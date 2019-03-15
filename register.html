@@ -10,10 +10,10 @@
 
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			 <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 			<h1 class="mui-title">注册</h1>
 		</header>
-		
+
 		<div class="mui-content">
 			<form class="mui-input-group" id="form">
 				<div class="mui-input-row">
@@ -31,13 +31,17 @@
 
 				<div class="mui-content-padded" align="center">
 					<button type="submit" class="mui-btn mui-btn-green" id="reg">注册</button>
+					<!--<button type="button" class='mui-btn mui-btn-danger mui-action-back'>返回</button>-->
 				</div>
+			
 			</form>
 		</div>
 		<script src="js/mui.min.js"></script>
 		<script src="js/common.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			})
 
 			mui.plusReady(function() {
 				var form = document.getElementById("form");
@@ -71,8 +75,8 @@
 					mui.ajax(config.SERVER_URL + '/user/register', {
 						data: {
 							username: username.value,
-							password: password.value,
-							clientId: plus.push.getClientInfo().clientid
+							password: password.value
+//							clientId: plus.push.getClientInfo().clientid
 						},
 						dataType: 'json',
 						type: 'post',
@@ -88,7 +92,7 @@
 							password.blur();
 
 							mui.toast(res.message);
-							
+
 							if(res.success) {
 								mui.back();
 							}

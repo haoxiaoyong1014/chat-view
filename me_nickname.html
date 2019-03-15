@@ -37,7 +37,6 @@
 				var save = document.getElementById("save");
 				save.addEventListener("tap", function() {
 					
-
 					mui.ajax(config.SERVER_URL + "/user/updateNickname", {
 						data: {
 							id: user.id,
@@ -72,14 +71,13 @@
 					},
 					success: function(res) {
 						console.log("重新加载用户信息:" + JSON.stringify(res));
-						util.saveUser(res);
+						util.saveUser(res.result);
 						
 						// 触发自定义的refresh事件重新加载昵称
 						// 获取main_me的webview
 						var main_me = plus.webview.getWebviewById("main_me.html");
 						// 触发refresh自定义事件
 						mui.fire(main_me, "refresh");
-
 						// 返回到main_me页面
 						mui.back();
 
