@@ -1,5 +1,24 @@
 #### 基于Netty仿微信聊天项目
 
+**功能需求**
+
+* 登录/注册
+* 个人信息
+* 通讯录
+* 搜索好友
+* 添加好友
+* 好友聊天
+
+**技术架构--前端**
+ 
+* 开发工具：HBuilder 
+* 框架：MUI、H5+
+
+**后端**
+* 开发工具：IDEA
+* 框架：Spring Boot、MyBatis、Spring MVC、FastDFS、Netty
+* 数据库：mysql
+
 后端项目地址:https://github.com/haoxiaoyong1014/chat-software
 
 **登陆注册功能**
