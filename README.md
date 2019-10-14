@@ -23,9 +23,7 @@
 
 **登陆注册功能**
 
-![image.png](https://upload-images.jianshu.io/upload_images/15181329-fc4a812266f73d7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![image.png](https://upload-images.jianshu.io/upload_images/15181329-90e5a9127ebee062.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/15181329-fc4a812266f73d7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) ![image.png](https://upload-images.jianshu.io/upload_images/15181329-90e5a9127ebee062.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 **修改备注**
 
